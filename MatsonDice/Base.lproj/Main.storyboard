@@ -46,6 +46,10 @@
                                     <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="27"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAL-Kj-3We"/>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmj-k3-Gve"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +63,8 @@
                     </view>
                     <connections>
                         <outlet property="diceImageView1" destination="UR0-XT-H1t" id="UwC-YD-3kS"/>
+                        <outlet property="diceImageView2" destination="Lah-9U-lfj" id="D9a-ab-Qri"/>
+                        <outlet property="rollButton" destination="hCL-gf-JES" id="6YW-Zx-Zy6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
