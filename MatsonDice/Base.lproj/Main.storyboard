@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,15 +12,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MatsonDice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="rC9-BW-hqZ">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="UA0-ZJ-Lyq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lah-9U-lfj">
-                                <rect key="frame" x="227" y="384" width="120" height="120"/>
+                                <rect key="frame" x="227" y="436" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="UuD-WE-OK6"/>
                                     <constraint firstAttribute="width" constant="120" id="mYT-Lf-kAV"/>
@@ -32,24 +31,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UR0-XT-H1t">
-                                <rect key="frame" x="50" y="384" width="120" height="120"/>
+                                <rect key="frame" x="50" y="436" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="OQt-jD-oLF"/>
                                     <constraint firstAttribute="height" constant="120" id="SyL-Ej-v1w"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-gf-JES">
-                                <rect key="frame" x="128" y="642" width="135" height="94"/>
+                                <rect key="frame" x="128" y="684" width="135" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ROLL">
-                                    <fontDescription key="titleFontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="27"/>
+                                    <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="27"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UR0-XT-H1t" firstAttribute="top" secondItem="Lah-9U-lfj" secondAttribute="top" id="3mZ-SX-rS9"/>
                             <constraint firstItem="Lah-9U-lfj" firstAttribute="leading" secondItem="UR0-XT-H1t" secondAttribute="trailing" constant="57" id="9Ug-GK-KyC"/>
@@ -57,18 +57,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UR0-XT-H1t" secondAttribute="bottom" constant="306" id="jmg-wB-12W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="UR0-XT-H1t" id="UwC-YD-3kS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="46.376811594202906" y="-2.6785714285714284"/>
         </scene>
     </scenes>
     <resources>
         <image name="dice1" width="100" height="100"/>
         <image name="dices" width="512" height="512"/>
-        <image name="newbackground" width="444.66665649414062" height="414.33334350585938"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="newbackground" width="444.5" height="414"/>
     </resources>
 </document>
