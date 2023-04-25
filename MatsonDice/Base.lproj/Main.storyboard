@@ -40,15 +40,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-gf-JES">
                                 <rect key="frame" x="128" y="684" width="135" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ROLL">
                                     <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="27"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="rollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAL-Kj-3We"/>
-                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmj-k3-Gve"/>
+                                    <action selector="rollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lh7-lH-JDR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,7 +63,6 @@
                     <connections>
                         <outlet property="diceImageView1" destination="UR0-XT-H1t" id="UwC-YD-3kS"/>
                         <outlet property="diceImageView2" destination="Lah-9U-lfj" id="D9a-ab-Qri"/>
-                        <outlet property="rollButton" destination="hCL-gf-JES" id="6YW-Zx-Zy6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

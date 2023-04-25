@@ -25,9 +25,18 @@ class ViewController: UIViewController {
         //diceImageView1.alpha = 0.5
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func rollButton(_ sender: UIButton) {
+        
+        var diceArray : Array<UIImage> = ["dice1","dice2","dice3","dice4","dice5","dice6"]
+        
+        diceImageView1.image = diceArray[Int.random(in: 0...5)]
+        diceImageView2.image = diceArray[Int.random(in: 0...5)]
+        
     }
     
+    //Final App:
+    //Show four dice
+    //Then, create a label that will give the total value of the dice combined.
 }
 
