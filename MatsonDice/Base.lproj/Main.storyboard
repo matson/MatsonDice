@@ -58,12 +58,6 @@
                                     <constraint firstAttribute="height" constant="120" id="uJV-WR-YiZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-nS-zkS">
-                                <rect key="frame" x="182" y="766" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,17 +69,16 @@
                             <constraint firstItem="UR0-XT-H1t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="CmA-vD-map"/>
                             <constraint firstItem="hCL-gf-JES" firstAttribute="centerX" secondItem="MRX-sO-idH" secondAttribute="centerX" id="D6f-bU-6Lt"/>
                             <constraint firstItem="MRX-sO-idH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="Lor-Jy-HPt"/>
-                            <constraint firstItem="3Uw-nS-zkS" firstAttribute="top" secondItem="hCL-gf-JES" secondAttribute="bottom" constant="31" id="Y3h-gb-ZMh"/>
                             <constraint firstItem="DmK-ce-VJo" firstAttribute="trailing" secondItem="hCL-gf-JES" secondAttribute="trailing" id="bdL-RH-tex"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UR0-XT-H1t" secondAttribute="bottom" constant="306" id="jmg-wB-12W"/>
                             <constraint firstItem="Lah-9U-lfj" firstAttribute="top" secondItem="DmK-ce-VJo" secondAttribute="bottom" constant="36" id="oX8-or-B8f"/>
                             <constraint firstItem="hCL-gf-JES" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="sdb-eU-u0V"/>
                             <constraint firstItem="MRX-sO-idH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="uer-GT-jzX"/>
-                            <constraint firstItem="hCL-gf-JES" firstAttribute="centerX" secondItem="3Uw-nS-zkS" secondAttribute="centerX" id="vLW-oW-ygu"/>
                             <constraint firstItem="hCL-gf-JES" firstAttribute="top" secondItem="Lah-9U-lfj" secondAttribute="bottom" constant="83" id="x4g-N5-zi2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="diceImage3" destination="DmK-ce-VJo" id="a11-MX-9a3"/>
                         <outlet property="diceImageView1" destination="UR0-XT-H1t" id="UwC-YD-3kS"/>
                         <outlet property="diceImageView2" destination="Lah-9U-lfj" id="D9a-ab-Qri"/>
                     </connections>

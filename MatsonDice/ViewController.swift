@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var diceImageView2: UIImageView!
 
-  
+    @IBOutlet weak var diceImage3: UIImageView!
+    
     
     override func viewDidLoad() {
         
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
     
     @IBAction func rollButton(_ sender: UIButton) {
         
+        
+        
+        
+        
         var diceArray : Array<UIImage> = [UIImage(named: "dice1")!,
                                           UIImage(named: "dice2")!,
                                           UIImage(named: "dice3")!,
@@ -36,11 +41,11 @@ class ViewController: UIViewController {
         
         diceImageView1.image = diceArray[Int.random(in: 0...5)]
         diceImageView2.image = diceArray[Int.random(in: 0...5)]
+        diceImage3.image = diceArray[Int.random(in: 0...5)]
+        
+    
         
     }
-    
-    //Final App:
-    //Show four dice
-    //Then, create a label that will give the total value of the dice combined.
+
 }
 
