@@ -20,15 +20,19 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        diceImageView1.image = UIImage(named: "dice6")
-        diceImageView2.image = UIImage(named: "dice2")
         //diceImageView1.alpha = 0.5
         // Do any additional setup after loading the view.
     }
     
     @IBAction func rollButton(_ sender: UIButton) {
         
-        var diceArray : Array<UIImage> = ["dice1","dice2","dice3","dice4","dice5","dice6"]
+        var diceArray : Array<UIImage> = [UIImage(named: "dice1")!,
+                                          UIImage(named: "dice2")!,
+                                          UIImage(named: "dice3")!,
+                                          UIImage(named: "dice4")!,
+                                          UIImage(named: "dice5")!,
+                                          UIImage(named: "dice6")!
+                                                                ]
         
         diceImageView1.image = diceArray[Int.random(in: 0...5)]
         diceImageView2.image = diceArray[Int.random(in: 0...5)]
