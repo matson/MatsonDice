@@ -28,10 +28,6 @@ class ViewController: UIViewController {
     
     @IBAction func rollButton(_ sender: UIButton) {
         
-        var sum1 = 0;
-        var sum2 = 0;
-        var sum3 = 0;
-        var totalSum = 0;
         
         let diceArray : Array<UIImage> = [UIImage(named: "dice1")!,
                                           UIImage(named: "dice2")!,
@@ -43,18 +39,18 @@ class ViewController: UIViewController {
         
         diceImageView1.image = diceArray[Int.random(in: 0...5)]
         let dice1 = diceImageView1.image!
-        sum1 = findValue(array: diceArray, image: dice1)
+        let value1 = findValue(array: diceArray, image: dice1)
         let dice2 = diceImageView2.image!
         diceImageView2.image = diceArray[Int.random(in: 0...5)]
-        sum2 = findValue(array: diceArray, image: dice2)
+        let value2 = findValue(array: diceArray, image: dice2)
         let dice3 = diceImage3.image!
         diceImage3.image = diceArray[Int.random(in: 0...5)]
-        sum3 = findValue(array: diceArray, image: dice3)
+        let value3 = findValue(array: diceArray, image: dice3)
         
-        print("this is sum 1..\(sum1)")
-        print("this is sum 2..\(sum2)")
-        print("this is sum 3..\(sum3)")
-        totalSum = sum1+sum2+sum3
+        print("this is value for dice1..\(value1)")
+        print("this is value for dice2..\(value2)")
+        print("this is value for dice3..\(value3)")
+        let totalSum = value1+value2+value3
         
         sumDice.text = String(totalSum)
     
@@ -66,7 +62,7 @@ class ViewController: UIViewController {
    
     func findValue(array: Array<UIImage>, image: UIImage) -> Int {
         //takes in
-        var value = 0;
+        var value = Int();
         if(image === array[0]){
             value = 1; //one
         }
