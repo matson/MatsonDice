@@ -65,22 +65,29 @@ class ViewController: UIViewController {
         var value = Int();
         if(image === array[0]){
             value = 1; //one
+            print("was 1 here")
         }
         else if(image === array[1]){
             value = 2; //two
+            print("was 2 here")
         }
         else if(image === array[2]){
             value = 3; //three
+            print("was 3 here")
         }
         else if(image === array[3]){
             value = 4; //four
+            print("was 4 here")
         }
         else if(image === array[4]){
             value = 5; //five
+            print("was 5 here")
         }
         else if(image === array[5]){
             value = 6; //six
+            print("was 6 here")
         }
+        print(value)
         return value
     }
     
